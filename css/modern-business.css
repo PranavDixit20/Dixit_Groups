@@ -13,7 +13,9 @@ body {
     padding-top: 56px;
   }
 }
-
+.card-body {
+  color: rgba(255, 255, 255, 0.60);
+}
 .carousel-item {
   height: 65vh;
   min-height: 300px;
