@@ -29,3 +29,11 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.text-purple {
+  color: #FF9800 !important;
+}
+
+.text-wood {
+  color: #FFA726 !important;
+}
