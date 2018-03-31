@@ -15,7 +15,15 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   </head>
 
   <body>
@@ -29,22 +37,43 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="about.html">Overview</a>
+                <a class="dropdown-item" href="qualitypolicy.html">Quality Policy</a>
+                <a class="dropdown-item" href="visionmission.html">Vision & Mission</a>
+              </div>
+            </li>
+
+            <li class="nav-item  dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="jewel.html">Jewellers</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">Art</a>
+                <a class="dropdown-item" href="mu.html">Music</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="bus.html">Business</a>
+            </li>
+
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
+
           <li class="nav-item active">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item  dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Gallery</a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">Jewellers</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">Art</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">Music</a>
-            </div>
+
+
+
+        </ul>
+      </div>
+    </div>
     </nav>
 
     <!-- Page Content -->
@@ -72,7 +101,7 @@
 
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 bg-warning text-white">
+            <div class="card h-100 bg-warning text-white animated lightSpeedIn">
               <h4 class="card-header text-center">P.S.Dixit Jewellers</h4>
               <div class="card-body text-white">
                 <p>
@@ -85,8 +114,8 @@
                 </p>
                 <p>
                   <abbr title="Email">E</abbr>:
-                  <a href="mailto:name@example.com">name@example.com
-                  </a>
+                  <a class="text-light" href="mailto:psdjewellers1980@gmail.com"><b>psdjewellers1980@gmail.com
+                  </b></a>
                 </p>
                 <p>
 
@@ -97,9 +126,9 @@
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 bg-info text-white">
+            <div class="card h-100 bg-light text-dark animated lightSpeedIn">
               <h4 class="card-header text-center">Janaki Silver Sales</h4>
-              <div class="card-body text-white">
+              <div class="card-body text-dark">
                 <p>
                   Kavathe Mahakaal
                   <br>Sangli,Maharashtra 416405
@@ -110,8 +139,8 @@
                 </p>
                 <p>
                   <abbr title="Email">E</abbr>:
-                  <a href="mailto:name@example.com">name@example.com
-                  </a>
+                  <a class="text-dark" href="mailto:janakisilversales@gmail.com"><b>janakisilversales@gmail.com
+                  </b></a>
                 </p>
                 <p>
 
@@ -122,7 +151,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 bg-success text-white">
+            <div class="card h-100 bg-info text-white animated lightSpeedIn">
               <h4 class="card-header text-center">Dixit Sculpt Kreations</h4>
               <div class="card-body text-white">
                 <p>
@@ -135,8 +164,8 @@
                 </p>
                 <p>
                   <abbr title="Email">E</abbr>:
-                  <a href="mailto:name@example.com">name@example.com
-                  </a>
+                  <a class="text-light" href="mailto:vijaydixit.art@gmail.com"><b>vijaydixit.art@gmail.com
+                  </b></a>
                 </p>
                 <p>
 
@@ -147,7 +176,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 bg-danger text-white">
+            <div class="card h-100 bg-danger text-white animated lightSpeedIn">
               <h4 class="card-header text-center">Swarsadhana Sangeet Vidyalaya</h4>
               <div class="card-body text-white">
                 <p>
@@ -163,8 +192,8 @@
                 </p>
                 <p>
                   <abbr title="Email">E</abbr>:
-                  <a href="mailto:name@example.com">name@example.com
-                  </a>
+                  <a class="text-light" href="mailto:abhijitpotdar2684@gmail.com"><b>abhijitpotdar2684@gmail.com
+                  </b></a>
                 </p>
                 <p>
 
@@ -178,7 +207,7 @@
 
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 bg-secondary text-white">
+            <div class="card h-100 bg-secondary text-white animated lightSpeedIn">
               <h4 class="card-header text-center">Ganak Computers</h4>
               <div class="card-body text-white">
                 <p>
@@ -191,8 +220,8 @@
                 </p>
                 <p>
                   <abbr title="Email">E</abbr>:
-                  <a href="mailto:ganakcomputer@gmail.com">ganakcomputer@gmail.com
-                  </a>
+                  <a class="text-light" href="mailto:ganakcomputer@gmail.com"><b>ganakcomputer@gmail.com
+                  <b></a>
                 </p>
                 <p>
 
@@ -203,12 +232,16 @@
             </div>
           </div>
 
-
+<hr style="width:100%">
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <div class="row">
-        <div class="col-lg-8 mb-4">
-          <h3>Send us a Message</h3>
+<div class="container text-center" style="padding-top:40px">
+
+  <h3>Feedback</h3>
+  <p> “We all need people who will give us feedback. That’s how we improve.”</p>
+</div>
+      <div class=" card">
+        <div class="col-lg-12 mb-4">
           <form name="sentMessage" id="contactForm" novalidate>
             <div class="control-group form-group">
               <div class="controls">
@@ -241,8 +274,15 @@
           </form>
         </div>
 
-      </div>
+
+    </div>
       <!-- /.row -->
+
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-8">
+
+      </div>
 
     </div>
   </div>

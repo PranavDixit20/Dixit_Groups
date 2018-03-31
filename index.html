@@ -1,41 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Dixit Group Of Companies</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Dixit Group Of Companies</title>
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
-  <body>
+  <style>
+.button2 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 200px;
+  height: 50;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"> <img src="images/dl.png" width="50" height="50"><b> DIXIT GROUP OF COMPANIES </b> </img></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> <img src="images/dl.png" width="50" height="50"><b> DIXIT GROUP</b> </img></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="about.html ">Overview</a>
+              <a class="dropdown-item" href="qualitypolicy.html">Quality Policy</a>
+              <a class="dropdown-item" href="visionmission.html">Vision & Mission</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,274 +96,304 @@
               <a class="dropdown-item" href="portfolio-2-col.html">Art</a>
               <a class="dropdown-item" href="mu.html">Music</a>
             </div>
-    </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bus.html">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('images/dg.jpg')">
-            <div class="carousel-caption text-white d-none d-md-block">
-              <h1><b>Dixit Group Of Companies</b></h1>
-              <p>Tradition and ahead of trends in jewellery design.</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/psban.jpg')">
-            <div class="carousel-caption d-none d-md-block ">
-              <h1><b>P.S.D Jewellers</b></h1>
-              <p>Tradition and ahead of trends in jewellery design.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/sban.png')">
-            <div class="carousel-caption text-dark d-none d-md-block">
-              <h1><b>Janaki Silver Sales</b></h1>
-              <p>This is a description for the third slide.</p>
-            </div>
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
 
-          </div>
-          <!-- Slide Four - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/dsban.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h1><b>Dixit Sculpt Kreations</b></h1>
-              <p>This is a description for the third slide.</p>
-            </div>
-          </div>
-          <!-- Slide Five - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/instru-banner.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h1><b>Swarsadhana Sangeet Vidyalaya</b></h1>
-              <p>This is a description for the third slide.</p>
-            </div>
-          </div>
-          <!-- Slide Five - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/gc3.jpg')">
-            <div class="carousel-caption text-white d-none d-md-block">
-              <h1><b>Ganak Computers</b></h1>
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('images/dg1.jpg')">
+          <div class="carousel-caption text-wood d-none d-md-block">
+            <h1><b>Dixit Group</b></h1>
 
-            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/psban.jpg')">
+          <div class="carousel-caption d-none d-md-block ">
+            <h1><b>Pandharinath Savalaram Dixit Jewellers</b></h1>
+
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/sban.png')">
+          <div class="carousel-caption text-dark d-none d-md-block">
+            <h1><b>Janaki Silver Sales</b></h1>
+
+          </div>
+
+        </div>
+        <!-- Slide Four - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/dsban.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><b>Dixit Sculpt Kreations</b></h1>
+
+          </div>
+        </div>
+        <!-- Slide Five - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/instru-banner.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><b>Swarsadhana Sangeet Vidyalaya</b></h1>
+
+          </div>
+        </div>
+        <!-- Slide Five - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/gc3.jpg')">
+          <div class="carousel-caption text-white d-none d-md-block">
+            <h1><b>Ganak Computers</b></h1>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Page Content -->
+  <div class="container text-center">
+
+    <h1 class="my-4"><b><u>THE DIXIT GROUP</u></b></h1>
+
+    <div class="row">
+      <div class="col-lg-6 text-left">
+
+        <p>The <b>Dixit Group</b> is a consortium of companies that are leaders in providing business in Gold,Silver,Sculpture,Music,Technology. It is always our honour to serve our customers and we are always ready to Deliver the best products to our customers.
+          Customer satisfaction is our main motto.To provide best products to our customers and always keep them happy. To provide maximum services under one organization.</p>
+      </div>
+
+      <div class="col-lg-6 text-left">
+
+        <p>The <b>Dixit Group Of Companies</b> was started with a purpose to bring all our business under on hood. we have always worked hard for our customers and want them to know that we are much more than one organization. We are always happy to serve our customers, through Dixit Group Of Companies we will be
+        providing them our services in the field of Gold,Silver,Sculptures,Music,hardware and Software
+        technology.
+            </p>
+      </div>
+    </div>
+    <!-- /.row -->
+    <a href="about.html">
+     <button class="button2"><span>Read More</span></button></a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container" style="padding-top:40px">
+    <hr style="width:100%" >
+
+    <h1 class="my-4 text-center"><u><b>OUR BUSINESS</b></u></h1>
+
+
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-white bg-warning mb-3 animated rollIn">
+          <h4 class="card-header text-center">P.S.Dixit Jewellers</h4>
+          <div class="card-body">
+            <p class="card-text text-white">We are in business since 1930.We make and sell Gold Jewelry. With an experience of 88 years We Design best Gold jewellery in the market,quality and perfection is our main motto. Our main branch is located in Kavathe Mahakaal,Sangli.</p>
+          </div>
+          <div class="card-footer">
+            <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 bg-light mb-3 animated rollIn">
+          <h4 class="card-header text-center text-dark">Janaki Silver Sales</h4>
+          <div class="card-body">
+            <p class="card-text text-dark">
+              We are in business since 1930.We make and sell Silver Jewelry. With an experience of 88 years We Design best Silver jewellery and Temple Kalash in the market,quality and perfection is our main motto. Our main branch is located in Kavathe Mahakaal,Sangli.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="full-width.html" class="btn text-dark btn-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-white bg-info mb-3 animated rollIn">
+          <h4 class="card-header text-center ">Dixit Sculpt Kreations</h4>
+          <div class="card-body">
+            <p class="card-text text-white">We started this organization in 1975. We have an experience of 38 years.We make sculptures(fibre-glass and clay),muriels and also make all types of paintings and statues.Our main branch is in Sangvi,Pune. </p>
+          </div>
+          <div class="card-footer">
+            <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 animated rollIn">
+        <div class="card h-100 bg-danger text-white">
+          <h4 class="card-header text-center">Swarsadhana Sangeet Vidyalaya</h4>
+          <div class="card-body">
+            <p class="card-text text-white">We started this organization in 2008.We have experience of 10 years. We train students in singing and various musical instruments such as Tabla,Harmonium,Guitar,Piano etc. We also organize shows for marriage,birthdays,receptions and other
+              functions. Our main branch is in Hatkanangale,Kolhapur.</p>
+          </div>
+          <div class="card-footer">
+            <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+
+      </div>
+      <div class="col-lg-4 mb-4 animated rollIn">
+        <div class="card h-100 bg-secondary text-white">
+          <h4 class="card-header text-center">Ganak Computers</h4>
+          <div class="card-body">
+            <p class="card-text text-white">GANAK COMPUTERS was started with an idea to bring to the Market our application on the latest Smartphone Technology as well as help small and medium scale Business with our experience in utilizing these Technologies. We want to help you build
+              fast, resilient applications that have low maintenance and operational cost. For this we will leverage the experience. Our senior resources have been in this industry for the past 3+ years.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://www.ganakcomputers.com/" class="btn btn-link text-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Features Section -->
+
+
     <div class="container">
+      <hr style="width:100%">
 
-      <h1 class="my-4"><b>Welcome to Dixit Group Of Companies</b></h1>
+      <h1 class="my-4 text-center"><b><u>TESTIMONIALS</u></b></h1>
+      <div class="slideshow-container bg-info">
 
-      <!-- Marketing Icons Section -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-white bg-warning mb-3">
-            <h4 class="card-header text-center">P.S.Dixit Jewellers</h4>
-            <div class="card-body">
-              <p class="card-text text-white">We are in business since 1930.We make and sell Gold Jewelry. With an experience of 88 years We Design best Gold jewellery in the market,quality and perfection is our main motto. Our main branch is located in Kavathe Mahakaal,Sangli.</p>
-            </div>
-            <div class="card-footer">
-              <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
-            </div>
-          </div>
+        <div class="mySlides">
+          <q>P.S.Dixit jewellers are the most reliable jewellers when it comes to gold jewellery. A trustworthy brand with purity and surity.</q>
+          <p class="author">-- Vijaya Tidake</p>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 bg-light mb-3">
-            <h4 class="card-header text-center text-dark">Janaki Silver Sales</h4>
-            <div class="card-body">
-              <p class="card-text text-dark">
-                We are in business since 1930.We make and sell Silver Jewelry. With an experience of 88 years We Design best Silver jewellery and Temple Kalash in the market,quality and perfection is our main motto. Our main branch is located in Kavathe Mahakaal,Sangli.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="full-width.html" class="btn text-dark btn-link">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-white bg-info mb-3">
-            <h4 class="card-header text-center ">Dixit Sculpt Kreations</h4>
-            <div class="card-body">
-              <p class="card-text text-white">We started this organization in 1975. We have an experience of 38 years.We make sculptures(fibre-glass and clay),muriels and also make all types of paintings and statues.Our main branch is in Sangvi,Pune. </p>
-            </div>
-            <div class="card-footer">
-              <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 bg-danger text-white">
-            <h4 class="card-header text-center">Swarsadhana Sangeet Vidyalaya</h4>
-            <div class="card-body">
-              <p class="card-text text-white">We started this organization in 2010.We have experience of 8 years.
-              We train students in singing and various musical instruments such as Tabla,Harmonium,Guitar,Piano etc.
-              We also organize shows for marriage,birthdays,receptions and other functions. Our main branch is in Hatkanangale,Kolhapur.</p>
-            </div>
-            <div class="card-footer">
-              <a href="full-width.html" class="btn text-white btn-link">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
 
+        <div class="mySlides">
+          <q>Love the work done by the J.S.S, always get to see something new in their work.A must see Diety ornaments.  </q>
+          <p class="author">-- Mahankali Temple Trust.</p>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 bg-secondary text-white">
-            <h4 class="card-header text-center">Ganak Computers</h4>
-            <div class="card-body">
-              <p class="card-text text-white">GANAK COMPUTERS was started with an idea to bring to the Market our application on the latest Smartphone Technology as well as help small and medium scale Business with our experience in utilizing these Technologies. We want to help you build fast, resilient applications that have low maintenance and operational cost. For this we will leverage the experience. Our senior resources have been in this industry for the past 3+ years.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://www.ganakcomputers.com/" class="btn btn-link text-white">Learn More</a>
-            </div>
-          </div>
+
+        <div class="mySlides">
+          <q>Dixit sir is the most talented person in sculpting.I admire his work very much, frankly speaking I am a fan of his work.</q>
+          <p class="author">-- Vivek Khatavkar</p>
         </div>
+        <div class="mySlides">
+          <q>Two most talented brothers making a difference in the field of music.They are keeping the traditional music alive through swarsadhana,huge respect to them.</q>
+          <p class="author">-- Omkar Potdar</p>
+        </div>
+        <div class="mySlides">
+          <q>proffessional and creative team with a good experience in Software as well as hardware field.
+          Very good start for a startup, my best wishes to them..</q>
+          <p class="author">-- Abhishek Potdar</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides1(-1)">❮</a>
+        <a class="next" onclick="plusSlides1(1)">❯</a>
 
       </div>
-      <!-- /.row -->
 
-      <!-- Portfolio Section
-      <h2>Portfolio Heading</h2>
+      <div class="dot-container bg-danger">
+        <span class="dot" onclick="currentSlide1(1)"></span>
+        <span class="dot" onclick="currentSlide1(2)"></span>
+        <span class="dot" onclick="currentSlide1(3)"></span>
+        <span class="dot" onclick="currentSlide1(4)"></span>
+        <span class="dot" onclick="currentSlide1(5)"></span>
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project One</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Two</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!-- /.row -->
-
-      <!-- Features Section -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h2><b>Our Vision</b></h2>
-
-          <ul>
-            <li>
-            Customer satisfaction is our main motto.
-            </li>
-            <li>
-              To provide best products to our customers and always keep them happy.
-            </li>
-            <li>
-              To provide maximum services under one organization.
-            </li>
-          </ul>
-          <p>The Dixit Group is a consortium of companies that are leaders in providing business in Gold,Silver,Sculpture,Music,Technology. It is always our honour to serve our customers and we are always ready to
-          Deliver the best products to our customers.</p>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="images/dgban.png" alt="">
-        </div>
       </div>
-      <!-- /.row -->
+      <div class="container text-center" style="padding-top:20px">
+      <a href="sidebar.html"><button class="button2 text-center"><span>READ MORE</span></button></a>
+    </div>
+    </div>
 
-      <hr>
 
-      <!-- Call to Action Section -->
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <p>We would love to hear from you</p>
-        </div>
+    <script>
+      var slideIndex = 1;
+      showSlides1(slideIndex);
+
+      function plusSlides1(n) {
+        showSlides1(slideIndex += n);
+      }
+
+      function currentSlide1(n) {
+        showSlides1(slideIndex = n);
+      }
+
+      function showSlides1(n) {
+        var i;
+        var slides = document.getElementsByClassName('mySlides');
+        var dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active1";
+      }
+    </script>
+
+
+
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
 
       </div>
 
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <div class="row mb-4">
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="row mb-4">
         <p class="col-lg-6 text-white">Copyright &copy; 2017 Dixit Group Of Companies</p>
         <p class="col-lg-6 text-right text-white">Copyright &copy; Designed & Developed By Ganak Computers.</p>
       </div>
     </div>
-      <!-- /.container -->
-    </footer>
+    <!-- /.container -->
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
 
 </html>
